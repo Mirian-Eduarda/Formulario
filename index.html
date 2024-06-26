@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html"; charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-widht, initial-scale=1.0">
   <title>Formulário de Dados Pessoais</title>
-<script type="text/javascript">
-  function duplicar(){
-    var dup = document.getElementById("dup");
-  dup.innerHTML +='<label for="texto">ENVIAR ALGO: </label><input id="texto" type="texto" name="enviado[]"><button type="button" onclick="duplicar()">adicionar+</button>'
- }
-</script>
-
-
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -56,36 +48,36 @@
 <body>
   <div class="container">
     <h2>Formulário de Dados Pessoais</h2>
-    <form action="estrutura.php" method="POST" name="formulario">
+    <form action="index.php" method="post" name="formulario">
     
       <label for="nome" class="required">Nome:</label>
-      <input type="text" id="nome"  name="nome" required>
+      <input type="text" id="name"  name="nome" required>
 
       <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="telefone">
+      <input type="tel" id="tel" name="telefone">
 
       <label for="data-nascimento" class="required">Data de Nascimento:</label>
-      <input type="date" id="data-nascimento" name="data-nascimento" required>
+      <input type="date" id="dataNascimento" name="data-nascimento" required>
 
       <label for="email" class="required">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="e-mail" name="email" required>
 
       <label for="idade">Idade:</label>
-      <input type=“number” id="idade" name="idade" required>
+      <input type=“number” id="age" name="idade" required>
  
       <label for="endereco">Endereço:</label> 
-      <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required> 
+      <input type="text" id="adress" name="endereco" placeholder="Digite seu endereço" required> 
     
      
       <label for="sexo">Sexo:</label>
-      <select id="sexo" name="sexo">
+      <select id="sex" name="sexo">
         <option value="masculino">Masculino</option>
         <option value="feminino">Feminino</option>
         <option value="prefiro não informar">Prefiro não informar</option>
       </select>
 
       <label for="status">Estado Civil</label> 
-      <select  id="status" name="status">
+      <select  id="estado" name="status">
         <option value="0">Prefiro não informar</option>
          <option value="1">Solteiro</option>
          <option value="2">Casado</option>
@@ -95,13 +87,13 @@
       </select>
 
       <label  for="texto">Adicionar Informação:</label>
-      <input id="texto" type="texto" name="enviado[]">
+      <input id="text" type="texto" name="texto">
       <button type="button" onclick="duplicar()">adicionar+</button>
       <br>
       <label for="mensagem">Experiências Profissionais:</label>
-      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+      <textarea id="message" name="mensagem" rows="4"></textarea>
 
-      <input type="submit" value="Enviar">
+      <input type="submit" name="botao" value="Enviar">
     </form>
   </div>
 </body>

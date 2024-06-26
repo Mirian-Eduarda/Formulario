@@ -1,0 +1,17 @@
+{
+    "name": "mirian/formcomphp",
+    "autoload": {
+        "psr-4": {
+            "Mirian\\Formcomphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mirian Eduarda",
+            "email": "mirian132eduarda@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^3.0"
+    }
+}
